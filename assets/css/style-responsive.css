@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html{
+	margin:0;
+	font-family: 'Nunito', sans-serif;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+body{
+	background-color:#6D7470;
+	color:#fff; 
+	zoom:90%;
+	overflow: hidden;
+}
+h1,h2,h3{
+	font-weight: 400;
+	font-size:1.8rem;
+}
+a{
+	color:#A4C4B5;
+}
+input:focus{
+	outline:none;
+}
+
+.main-wrapper{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin:5vh 0 5vh;
+	text-align: center;
+}
+
+.left-side{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background: url("../img/bird-bg.jpg") no-repeat center / cover;
+	flex-basis: 33.33333%;	
+}
+
+.right-side{
+	display: flex;
+	flex-direction: column;
+	background-color:#fff; 
+	padding:45px;
+	flex-basis: 33.33333%;
+	}
+
+
+.left-side .text{
+	padding:0 3rem 2rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+.right-side h1{
+	font-family: 'Pacifico', cursive;
+	padding-top:30px;
+	color:#626262;
+}
+
+.right-side h2{
+	font-size: 1.2rem;
+	font-weight:bold;
+	margin:40px 0;
+	color:#9FA19E;
+}
+
+.forget-password{
+	font-size:.8rem;
+	float: right;
+	padding-top:20px ;
+}
+
+.google-sign-in{
+	font-weight: bold;
+}
+
+.google-sign-in img{
+	vertical-align:middle
+}
+
+.google-sign-in span{
+	display:inline;
+	padding-left: 10px;
+	color:#000;
+
+}
+
+.btn-sign-in{
+	background-color: #696969;
+	color:#fff;
+	border:none;
+	border-radius: 25px;
+	cursor: pointer;
+	padding:10px 50px;
+	font-weight: 400;
+	font-size: 1rem;
+	margin:30px 25% 30px;
+	font-family: 'Nunito', sans-serif;
+	transition: all 0.5s;
+ 
+}
+
+.btn-sign-in:hover{
+	box-shadow:2px 5px rgba(0,0,0,.2);
+}
+.username-field,.password-field,.forget-password{
+	margin:0 60px;
+}
+
+.input-fields label{
+	float:left;
+	font-size: .9rem;
+	color:#696969;
+}
+
+.input-fields input{
+	border:none;
+	border-bottom:1px solid #ccc;
+	box-sizing: border-box;
+	padding:10px 0;
+	/*margin:2px 0;*/
+	width:100%;
+	font-family: 'Nunito', sans-serif;
+	font-weight:500;
+	font-size: 1.6rem;
+	transition: border-color 0.2s;
+
+	
+}
+
+.password-field label{
+	margin-top: 20px;
+}
+
+
+.lines{
+	 width:50%; 
+	 text-align:center;
+	 border-bottom: 1px solid #ccc;
+	 line-height:0.1em; 
+	 margin:30px 25% 30px;
+	 color:#222;
+	  }
+
+.lines span{
+	padding:0 10px;
+	background: #fff;
+}
+
+.alert{
+	color:red;
+	background-color: #F8D7DA;
+	padding:15px 15px;
+	border-radius: 3px;
+	text-align: left;
+	margin:-20px 0 20px;
+}
+
+.hide{
+	display: none;
+}
+
+.create-account{
+	color:#222;
+}
+
+
+/*@media(max-width: 768px) {
+	.col.left{
+		display:none;
+	}
+}*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 800px) {
+		body{
+		overflow: auto;
+	}
+	.left-side{
+		display: none;
+	}
+	.username-field,.password-field,.forget-password{
+	margin:0 0px;
+}
+.right-side{
+	flex-basis: 60%;
+}
+
+.right-side h1{
+	padding-top:0;
+}
+
+.right-side h2{
+	margin:1.2rem 0;
+	
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {...}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.left-side{
+		flex-basis:35%;
+	}
+	.right-side{
+		flex-basis: 29%
+	}
+}

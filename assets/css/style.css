@@ -10,6 +10,7 @@ html{
 body{
 	background-color:#6D7470;
 	color:#fff; 
+	zoom:90%;
 }
 h1,h2,h3{
 	font-weight: 400;
@@ -23,31 +24,32 @@ input:focus{
 }
 
 .main-wrapper{
-	margin:5% auto;
-	/*border:1px solid #fff;*/
-	width: 960px;
+	margin:5% auto;	
+	width: 1140px;
 	overflow: hidden;
-	/*display:inline;*/
 	text-align: center;
-	/*align-items: center;
-	justify-content: center;*/
 
 }
 
 .left-side{
 	float:left;
-	width:460px;
-	background: url("bird-bg.jpg") no-repeat center;
-	height: 600px;
-
-
+	width:590px;
+	background: url("../img/bird-bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 714px;
 }
 
+.left-side .text{
+	line-height: 1.0rem;
+	margin-top:97%;
+	text-align: center;
+	padding:0 60px;
+}
 
 .right-side{
 	/*border:1px solid red;*/
 	float:left;
-	width:460px;
+	width:530px;
 	background-color: #fff;
 	color:#8B8D8A;
 	padding: 10px;
@@ -55,12 +57,12 @@ input:focus{
 
 .right-side h1{
 	font-family: 'Pacifico', cursive;
-	padding-top:40px;
+	padding-top:30px;
 }
 .right-side h2{
 	font-size: 1.2rem;
 	font-weight:bold;
-	margin:50px 0;
+	margin:40px 0;
 }
 
 .forget-password{
@@ -91,9 +93,11 @@ input:focus{
 	border-radius: 25px;
 	cursor: pointer;
 	padding:10px 50px;
-	/*font-weight: bold;*/
+	font-weight: 400;
 	font-size: 1rem;
-	margin-top:50px;
+	margin:30px 25% 30px;
+	font-family: 'Nunito', sans-serif;
+ 
 }
 
 .btn-sign-in:hover{
@@ -110,7 +114,7 @@ input:focus{
 
 .input-fields input{
 	border:none;
-	border-bottom:1px solid #8B8D8A;
+	border-bottom:1px solid #ccc;
 	box-sizing: border-box;
 	padding:10px 0;
 	/*margin:2px 0;*/
@@ -126,6 +130,33 @@ input:focus{
 	margin-top: 20px;
 }
 
-input[type="password"]{
-	-webkit-text-security: sqaure;
+
+.lines{
+	 width:50%; 
+	 text-align:center;
+	 border-bottom: 1px solid #ccc;
+	 line-height:0.1em; 
+	 margin:30px 25% 30px;
+	  }
+
+.lines span{
+	padding:0 10px;
+	background: #fff;
+}
+
+.alert{
+	color:red;
+	background-color: #F8D7DA;
+	padding:15px 15px;
+	border-radius: 3px;
+	text-align: left;
+	margin:-20px 0 20px;
+}
+
+.hide{
+	display: none;
+}
+
+.create-account{
+	margin-bottom:47px;
 }
